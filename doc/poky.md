@@ -9,6 +9,7 @@
 * Ubuntu
 * RHEL
 * CentOS
+
 해당 프로젝트는 Ubuntu 16.04.6 버전을 사용한다.
 
 ### 우분투 포키 설치
