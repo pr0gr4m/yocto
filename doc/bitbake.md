@@ -78,4 +78,4 @@ rootfs에 설치될 패키지들의 목록은 IMAGE_INSTALL에 나열된 패키�
 rootfs를 압축 해제할 때 참조된 패키지들에 대한 post-installation script가 실행된다. 이는 첫 부팅 시 생기는 문제를 피하기 위해서다.
 이 후에는 rootfs의 최적화가 진행된다. prelink 프로세스가 실행 파일의 동작 시간을 줄이기 위해 동적 링크를 최적화한다. mklibs 프로세스는 사용되지 않는 심볼들을 지워 라이브러리 크기를 최적화한다.
 파일시스템을 만들기 위한 디렉토리 생성이 완료되면 IMAGE_FSTYPES 변수에 나열된 파일시스템들이 나열된다.
-do_rootfs가 완전히 끝난 후 만들어진 이미지는 build/tmp/deploy/image/<machine>/에 위치된다.
+do_rootfs가 완전히 끝난 후 만들어진 이미지는 ```build/tmp/deploy/image/<machine>/```에 위치된다.
