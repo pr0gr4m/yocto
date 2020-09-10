@@ -29,4 +29,4 @@ $ source toaster start
 콘솔로 돌아와서 bitbake를 이용하여 빌드를 진행하면 Toaster 웹 인터페이스에서 진행 사항 등을 모니터링 할 수 있다.
 ![toaster_monitor](https://github.com/pr0gr4m/yocto/blob/master/img/toaster/4.png?raw=true)
 
-이 외에도 Toaster 상에서 직접 이미지를 빌드하고 리포트를 받는 등의 관리 작업도 할 수 있다. 이와 관련된 내용은 https://www.yoctoproject.org/docs/2.1/toaster-manual/toaster-manual.html를 참고한다.
+이 외에도 Toaster 상에서 직접 이미지를 빌드하고 리포트를 받는 등의 관리 작업도 할 수 있다. 이와 관련된 내용은 https://www.yoctoproject.org/docs/latest/toaster-manual/toaster-manual.html를 참고한다.
