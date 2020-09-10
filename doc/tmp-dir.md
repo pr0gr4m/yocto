@@ -48,6 +48,6 @@ work 작업 디렉토리는 비정상적인 동작이나 빌드가 실패할 경
 ### sysroot 디렉토리
 
 procps 레시피를 빌드하면 다음과 같이 recipes-sysroot와 recipes-sysroot-native 디렉토리를 볼 수 있다.
-![procps-sysroot]()
+![procps-sysroot](https://github.com/pr0gr4m/yocto/blob/master/img/tmp/1.png?raw=true)
 이 디렉토리에는 각 sysroot에 설치된 패키지가 있다. recipes-sysroot에는 타깃에서 사용하는 헤더와 라이브러리가 있고, recipes-sysroot-native에는 빌드하는 동안 호스트 시스템에서 사용하는 도구가 들어가 있다.
 빌드 과정에서 헤더를 빠트리거나 링크가 실패된 것을 알았을 때 호스트와 타깃의 sysroot 내용물이 정확한지 다시 한번 확인해야 한다.
