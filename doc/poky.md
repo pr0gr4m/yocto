@@ -94,3 +94,6 @@ $ runqemu <machine> <zImage> <filesystem>
 ```console
 $ runqemu qemuarm core-image-full-cmdline
 ```
+다음과 같이 qemu이 시작하며, 부팅 성공하면 root로 비밀번호 없이 로그인 할 수 있다.
+![qemu_start](https://github.com/pr0gr4m/yocto/blob/master/img/poky/1.png?raw=true)
+![qemu_login](https://github.com/pr0gr4m/yocto/blob/master/img/poky/2.png?raw=true)
