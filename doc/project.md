@@ -15,7 +15,7 @@ poky SDK는 설치된 환경과 무관하게 컴퓨터에 설치할 수 있는 S
 $ bitbake core-image-full-cmdline -c populate_sdk
 ```
 위 명령으로 core-image-full-cmdline 기반 SDK가 만들어진다. 커스텀 이미지가 있으면 위 이미지 대신 이용할 수 있다. SDK는 MACHINE 변수를 사용해 설정한 머신의 아키텍처로 생성된다.
-빌드된 후 바이너리 스크립트를 build/tmp/deploy/sdk/poky-glibc-x86_64-core-image-full-cmdline-armv5e-toolchain-2.4.sh 경로에서 찾을 수 있다.
+빌드된 후 바이너리 스크립트를 build/tmp/deploy/sdk/poky-glibc-x86_64-core-image-full-cmdline-armv5e-toolchain-2.4.4.sh 경로에서 찾을 수 있다.
 생성된 스크립트를 이용하여 SDK를 설치해야 한다. 설치 프로그램은 다음을 제공한다.
 * environment-setup-armv5te-poky-linux-gnueabi : 툴체인을 사용하기 위해 필요한 모든 환경 변수의 설정을 위해 사용
 * site-config-armv5te-poky-linux-gnueabi : 툴체인 생성에 사용되는 변수들을 담고 있는 파일
@@ -30,13 +30,13 @@ $ bitbake core-image-full-cmdline -c populate_sdk
 ```console
 $ bitbake meta-toolchain
 ```
-위 명령의 결과는 build/tmp/deploy/sdk/poky-eglibc-x86_64-meta-toolchain-armv5te-toolchain-2.4.sh에 생성된다. 설치 과정은 이미지 기반 SDK와 동일하다.
+위 명령의 결과는 build/tmp/deploy/sdk/poky-eglibc-x86_64-meta-toolchain-armv5te-toolchain-2.4.4.sh에 생성된다. 설치 과정은 이미지 기반 SDK와 동일하다.
 
 ### SDK 생성
 
 다음과 같이 설치된 SDK를 사용해 빌드할 수 있다.
 ```console
-$ source /opt/poky/2.4/environment-setup-armv5e-poky-linux-gnueabi
+$ source /opt/poky/2.4.4/environment-setup-armv5e-poky-linux-gnueabi
 $ ${CC} hello.c -o hello
 ```
 
@@ -47,7 +47,7 @@ $ file hello
 
 이 외에도 리눅스 커널을 빌드하려면 다음과 같은 명령을 진행한다.
 ```console
-$ source /opt/poky/2.4/environment-setup-armv5e-poky-linux-gnueabi
+$ source /opt/poky/2.4.4/environment-setup-armv5e-poky-linux-gnueabi
 $ unset LDFLAGS
 $ make defconfig
 $ make zImage
