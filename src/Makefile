@@ -1,4 +1,4 @@
 ball: main.c
-	gcc -o ball main.c -lncurses
+	${CC} -o ball main.c -lncurses
 clean:
 	rm ball
